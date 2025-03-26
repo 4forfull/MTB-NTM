@@ -1,6 +1,7 @@
 import joblib
 import streamlit as st
 from PIL import Image
+import pickle
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
@@ -15,7 +16,8 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('./0.75-10_RF_model.pkl')
+        with open('./0.75-10_RF_model.pkl', 'rb') as f:
+            model = pickle.load(f)
         return model
     except FileNotFoundError:
         st.error("Model file not found. Please check the file path.")
