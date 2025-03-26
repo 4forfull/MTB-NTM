@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
+import joblib
 
 # Set page configuration
 st.set_page_config(
