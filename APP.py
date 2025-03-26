@@ -1,9 +1,7 @@
-import joblib
 import streamlit as st
 from PIL import Image
 import pickle
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
 
 # Set page configuration
 st.set_page_config(
