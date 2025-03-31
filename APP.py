@@ -87,12 +87,12 @@ def main():
         else:
             diagnosis, confidence = predict_diagnosis(input_data)
             if diagnosis:
-                color = "#00cc00" if diagnosis == "MTB" else "#ff4444"
+                color = "#C00000" if diagnosis == "MTB" else "#C00000"
                 st.markdown(
                     f"""
-                    <div style='background-color: #f0f0f0; padding: 20px; border-radius: 10px; text-align: center;'>
+                    <div style='background-color: #f0f0f0; padding: 20px; border-radius: 20px; text-align: center;'>
                         <h2 style='color: {color};'>Predicted Diagnosis: {diagnosis}</h2>
-                        <p>Confidence: {confidence:.2f}%</p>
+                        <p>Accuracy: {confidence:.2f}%</p>
                     </div>
                     """,
                     unsafe_allow_html=True
