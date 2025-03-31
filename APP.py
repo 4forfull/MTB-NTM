@@ -92,7 +92,7 @@ def main():
                     f"""
                     <div style='background-color: #f0f0f0; padding: 20px; border-radius: 20px; text-align: center;'>
                         <h2 style='color: {color};'>Predicted Diagnosis: {diagnosis}</h2>
-                        <p style='font-size: 20px; color: #C00000;'>Accuracy: {confidence:.2f}%</p>
+                        <p style='color: {color};'>Accuracy: {confidence:.2f}%</p>
                     </div>
                     """,
                     unsafe_allow_html=True
